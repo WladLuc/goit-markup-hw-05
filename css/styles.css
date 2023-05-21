@@ -426,7 +426,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--active-state-color);
-  transition: background-color var(--transition-dur-and-func), filter var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
