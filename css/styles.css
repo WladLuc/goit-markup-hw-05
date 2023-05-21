@@ -287,7 +287,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 584px;
+  min-height: 576px;
   background-color: var(--modal-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -308,7 +308,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color, border var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
@@ -426,8 +426,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--active-state-color);
-  transition: background-color var(--transition-dur-and-func);
-  transition-property: filter;
+  transition: background-color, filter var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
