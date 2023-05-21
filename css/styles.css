@@ -308,7 +308,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color, border var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
@@ -426,7 +426,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--active-state-color);
-  transition: background-color, filter var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func), filter var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
