@@ -104,7 +104,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--btn-hover-color);
+  color: var(--headings-color);
   padding: 24px 0px;
   transition: var(--transition-dur-and-func);
   transition-property: color;
@@ -115,15 +115,17 @@ img {
   color: var(--btn-hover-color);
 }
 
-.menu-link-studio::after {
-  opacity: 0;
-  visibility: hidden;
+.current-pg {
+  color: var(--btn-hover-color);
+}
+
+.current-pg::after {
   display: block;
   content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   background-color: var(--btn-hover-color);
   border-radius: 2px;
@@ -131,56 +133,6 @@ img {
   transition: var(--transition-dur-and-func);
   transition-property: opacity, visibility;
 }
-
-.menu-link-studio:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-link-portfolio::after {
-  opacity: 0;
-  visibility: hidden;
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 66px;
-  height: 4px;
-  background-color: var(--btn-hover-color);
-  border-radius: 2px;
-  margin-top: 20px;
-  transition: var(--transition-dur-and-func);
-  transition-property: opacity, visibility;
-}
-
-.menu-link-portfolio:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-link-contacts::after {
-  opacity: 0;
-  visibility: hidden;
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 67px;
-  height: 4px;
-  background-color: var(--btn-hover-color);
-  border-radius: 2px;
-  margin-top: 20px;
-  transition: var(--transition-dur-and-func);
-  transition-property: opacity, visibility;
-}
-
-.menu-link-contacts:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
 
 .address-list {
   font-style: normal;
@@ -249,10 +201,7 @@ img {
   color: var(--header-bg-color);
   cursor: pointer;
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 16px 32px;
-  gap: 10px;
   min-width: 169px;
   height: 56px;
   margin-left: auto;
@@ -484,7 +433,6 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  padding: 16px 32px;
   transition: var(--transition-dur-and-func);
   transition-property: border-color, color;
 }
@@ -495,14 +443,6 @@ img {
 
 .client-logo {
   fill: currentColor;
-}
-
-.customers-link:hover .customers-logo {
-  color: var(--btn-hover-color);
-}
-
-.customers-link:focus .customers-logo {
-  color: var(--btn-hover-color);
 }
 
 .customers-link:hover,
