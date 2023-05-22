@@ -387,6 +387,7 @@ img {
 .social-icon {
   fill: var(--light-bg-color);
 }
+
 /* list-item-title (text)*/
 .features-list-item-title,
 .team-list-item-title,
@@ -403,8 +404,7 @@ img {
 .features-list-item-descr,
 .team-list-item-descr,
 .project-list-item-descr,
-.contact-tel,
-.contact-mail {
+.contact-address {
   display: block;
   color: var(--body-text-color);
   font-size: 16px;
